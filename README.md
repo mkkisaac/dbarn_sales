@@ -1,2 +1,2 @@
-# dbarn_sales
-Automate the D-barn Sales
+# D-Barn Sales Dashboard Automation
+Automate the Sales of D-Barn from Data Mining to Visualization
