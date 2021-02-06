@@ -12,7 +12,7 @@ def download_file_from_google_drive(id, destination):
         params = { 'id' : id, 'confirm' : token }
         response = session.get(URL, params = params, stream = True)
 
-    save_response_content(response, destination)    
+    save_response_content(response, destination)
 
 def get_confirm_token(response):
     for key, value in response.cookies.items():
@@ -28,8 +28,8 @@ def save_response_content(response, destination):
         for chunk in response.iter_content(CHUNK_SIZE):
             if chunk: # filter out keep-alive new chunks
                 f.write(chunk)
-                
+
 file_id = '1f0N74sIMgc9oM0cLU_8cc5uhXYJxbDw2'
 destination = r'C:\Users\mkkis\Downloads\yo\test.xlsm'
 download_file_from_google_drive(file_id, destination)
-print('done!')
+print('done! hahaha!')
